@@ -522,7 +522,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   vidas: 3
   coleccionablesRecogidos: 0
-  coleccionablesGanar: 3
+  coleccionablesGanar: 6
   musicaFondo: {fileID: 1200774211}
   efectosSource: {fileID: 847097139}
   musicaPermitida: 1

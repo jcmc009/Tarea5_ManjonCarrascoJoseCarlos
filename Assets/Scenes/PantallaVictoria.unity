@@ -438,7 +438,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 530.9, y: 256}
+  m_AnchoredPosition: {x: 414, y: 270}
   m_SizeDelta: {x: 1148, y: 512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &405801190
@@ -1032,7 +1032,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 205, y: -199}
+  m_AnchoredPosition: {x: 205, y: -210}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1063396557
@@ -1439,7 +1439,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 396, y: -199}
+  m_AnchoredPosition: {x: 396, y: -212}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1451038855
@@ -1780,8 +1780,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   vidas: 3
   coleccionablesRecogidos: 0
+  coleccionablesGanar: 5
   musicaFondo: {fileID: 0}
+  efectosSource: {fileID: 0}
   musicaPermitida: 1
+  efectosPermitidos: 1
   textoResumenVidas: {fileID: 1328154083}
   textoResumenColeccionables: {fileID: 1813818114}
   panelGameOver: {fileID: 0}

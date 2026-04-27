@@ -46,15 +46,17 @@ private void AlCargarEscena(Scene escena, LoadSceneMode modo)
 } 
 private void VincularBotonesMenu()
 {
-    // Buscamos el botón por su nombre en la jerarquía
+    // 1. Buscamos TODOS los botones por su nombre en la jerarquía, ¡incluido Salir!
     Button btnJugar = GameObject.Find("Comenzar")?.GetComponent<Button>();
     Button btnAjustes = GameObject.Find("Ajustes")?.GetComponent<Button>();
     Button btnCreditos = GameObject.Find("Creditos")?.GetComponent<Button>();
+    Button btnSalir = GameObject.Find("Salir")?.GetComponent<Button>();
 
-    // Si los encuentra, les asigna la función del GameManager Inmortal
-    if (btnJugar != null) btnJugar.onClick.AddListener(IniciarJuego);
-    if (btnAjustes != null) btnAjustes.onClick.AddListener(cargarAjustes);
-    if (btnCreditos != null) btnCreditos.onClick.AddListener(cargarCreditos);
+    // 2. Limpiamos los cables rotos del Inspector y conectamos el cable Inmortal
+    if (btnJugar != null) { btnJugar.onClick.RemoveAllListeners(); btnJugar.onClick.AddListener(IniciarJuego); }
+    if (btnAjustes != null) { btnAjustes.onClick.RemoveAllListeners(); btnAjustes.onClick.AddListener(cargarAjustes); }
+    if (btnCreditos != null) { btnCreditos.onClick.RemoveAllListeners(); btnCreditos.onClick.AddListener(cargarCreditos); }
+    if (btnSalir != null) { btnSalir.onClick.RemoveAllListeners(); btnSalir.onClick.AddListener(SalirJuego); } // <-- LÍNEA NUEVA
     
     Debug.Log("✅ Botones del Menú vinculados automáticamente");
 }
