@@ -101,7 +101,7 @@ public class PlayerController : MonoBehaviour
                     spriteRenderer.flipX = false;
                 }
 
-                // Saltar con deslizamiento hacia arriba (Corregido para que funcione con 1 o más dedos)
+                // Saltar con deslizamiento hacia arriba
                 if (toque.phase == TouchPhase.Moved && toque.deltaPosition.y > 10f)
                 {
                     quiereSaltar = true;
